@@ -1,0 +1,31 @@
+$soft_red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$dark_desaturated_cyan: hsl(167, 40%, 24%); // (graphic design text)
+$dark_blue: hsl(198, 62%, 26%); // (photography text)
+$dark_moderate_cyan: hsl(168, 34%, 41%); // (footer)
+
+$very_dark_desaturated_blue: hsl(212, 27%, 19%);
+$very_dark_grayish_blue: hsl(213, 9%, 39%);
+$dark_grayish_blue: hsl(232, 10%, 55%);
+$grayish_blue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Barlow', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  font-size: .625rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+body {
+}
+footer {
+  display: none;
+}
