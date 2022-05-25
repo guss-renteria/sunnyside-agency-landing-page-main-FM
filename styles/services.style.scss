@@ -1,0 +1,232 @@
+$dark_grayish_blue: hsl(232, 10%, 55%);
+$very_dark_desaturated_blue: hsl(212, 27%, 19%);
+$dark_desaturated_cyan: hsl(167, 40%, 24%); // (graphic design text)
+$dark_blue: hsl(198, 62%, 26%); // (photography text)
+$yellow: hsl(51, 100%, 49%);
+$soft_red: hsl(7, 99%, 70%);
+
+section.services {
+  position: relative;
+  .services-part {
+    &:nth-child(1),
+    &:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+
+      img.image {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      div.text {
+        padding: 6.4rem 3.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+          margin-bottom: 3.2rem;
+          font-size: 3.2rem;
+          font-family: 'Fraunces', serif;
+          text-align: center;
+        }
+        p {
+          margin-bottom: 3.2rem;
+          color: $dark_grayish_blue;
+          font-size: 1.8rem;
+          line-height: 2.8rem;
+          text-align: center;
+        }
+        button.more {
+          padding: 1rem;
+          border: none;
+          background: none;
+          cursor: pointer;
+
+          font-size: 1.6rem;
+          font-family: 'Fraunces', serif;
+          text-transform: uppercase;
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 100%;
+            height: .8rem;
+            opacity: .4;
+
+            z-index: -1;
+            position: absolute;
+            bottom: .8rem;
+            left: 0;
+            border-radius: .4rem;
+
+            transition: .2s ease;
+          }
+
+          &:hover {
+            &::before {
+              opacity: .8;
+            }
+          }
+        }
+      }
+    }
+    //
+    &:nth-child(1) {
+      div.text {
+        button.more {
+          &::before {
+            background: $yellow;
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      div.text {
+        button.more {
+          &::before {
+            background: $soft_red;
+          }
+        }
+      }
+    }
+    &:nth-child(3) {
+      position: relative;
+
+      div.image-service {
+        position: relative;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+        
+        div.info-service {
+          width: 100%;
+          padding: 0 3.2rem 5rem;
+          position: absolute;
+          bottom: 0;
+
+          h3 {
+            margin-bottom: 3.2rem;
+            font-size: 2.4rem;
+            font-family: 'Fraunces', serif;
+            text-align: center;
+          }
+
+          p {
+            font-size: 1.6rem;
+            text-align: center;
+            line-height: 2.8rem;
+          }
+        }
+
+        &:nth-child(1) {
+          * {
+            color: $dark_desaturated_cyan;
+          }
+        }
+        &:nth-child(1) {
+          * {
+            color: $dark_blue;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .services-part {
+      &:nth-child(1),
+      &:nth-child(2) {
+        flex-direction: row;
+
+        img.image {
+          width: 50%;
+        }
+
+        div.text {
+          overflow: hidden;
+
+          width: 50%;
+          padding: 10%;
+
+          align-items: flex-start;
+
+          h2 {
+            text-align: left;
+            align-self: flex-start;
+          }
+          p {
+            text-align: left;
+          }
+          button.more {
+            &::before {
+            }
+
+            &:hover {
+              &::before {
+              }
+            }
+          }
+        }
+      }
+      //
+      &:nth-child(1) {
+        flex-direction: row-reverse;
+
+        div.text {
+          h2 {
+            max-width: 32rem;
+          }
+          button.more {
+            &::before {
+            }
+          }
+        }
+      }
+      &:nth-child(2) {
+        div.text {
+          h2 {
+            max-width: 40rem;
+          }
+          button.more {
+            &::before {
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        display: flex;
+
+        div.image-service {
+          width: 50%;
+
+          img {
+            min-height: 60rem;
+            object-fit: cover;
+          }
+
+          div.info-service {
+            padding-left: 18%;
+            padding-right: 18%;
+            h3 {
+            }
+            p {
+            }
+          }
+
+          &:nth-child(1) {
+            * {
+            }
+          }
+          &:nth-child(1) {
+            * {
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-$dark_desaturated_cyan: hsl(167, 40%, 24%); // (graphic design text)
 $yellow: hsl(51, 100%, 49%);
+$very_dark_desaturated_blue: hsl(212, 27%, 19%);
 
 header {
   width: 100%;
@@ -54,7 +54,6 @@ header {
       display: none;
       opacity: 0;
 
-      color: $dark_desaturated_cyan;
       font-size: 1.8rem;
       text-align: center;
       text-decoration: none;
@@ -125,7 +124,7 @@ header {
           margin-right: 0;
 
           background: white;
-          color: $dark_desaturated_cyan;
+          color: $very_dark_desaturated_blue;
           font-size: 1.4rem;
 
           transition: .2s ease;

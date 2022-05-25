@@ -10,6 +10,7 @@ import './icons/icomoon/style.css'
 // [+]
 import Header from './scripts/header.script'
 import Intro from './scripts/intro.script'
+import Services from './scripts/services.script'
 
 //
 const __header = document.querySelector('header')
@@ -17,10 +18,16 @@ const header = new Header(__header)
 
 const __intro = document.querySelector('main > section.intro')
 const intro = new Intro(__intro)
-intro.debug()
+
+const __services = document.querySelector('main > section.services')
+const services = new Services(__services)
+services.debug()
 
 // [*] eventos
 // ? onresize
 window.onresize = () => {
-  intro.resize( window.innerWidth )
+  const size = window.innerWidth
+
+  intro.resize( size )
+  services.resize( size )
 }
