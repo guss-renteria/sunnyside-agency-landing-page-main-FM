@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [Vercel]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-page-using-html-sass-and-js-es6-vite-Pbs1ZMN7Jm)
+- Live Site URL: [Vercel](https://sunnyside-agency-landing-page-main-fm.vercel.app/)
 
 ## My process
 
