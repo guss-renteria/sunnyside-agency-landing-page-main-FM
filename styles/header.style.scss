@@ -50,7 +50,6 @@ header {
 
     a {
       width: 100%;
-      padding: 1.6rem;
       display: none;
       opacity: 0;
 
@@ -80,6 +79,7 @@ header {
       opacity: 1;
 
       a {
+        padding: 1.6rem;
         display: block;
         opacity: 1;
       }

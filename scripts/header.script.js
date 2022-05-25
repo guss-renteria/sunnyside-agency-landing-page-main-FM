@@ -1,3 +1,5 @@
+import '../styles/header.style.scss'
+
 class Header {
   constructor( context ) {
     this.header = context

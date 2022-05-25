@@ -1,4 +1,4 @@
-import '../styles/header.style.scss'
+import '../styles/intro.style.scss'
 
 import background_mobile from '../images/mobile/image-header.jpg'
 import background_desktop from '../images/desktop/image-header.jpg'
