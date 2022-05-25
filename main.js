@@ -1,8 +1,8 @@
 // [*] estilos
 import './styles/normalize.style.css'
 import './styles/index.style.scss'
-//
 import './styles/client_testimonials.style.scss'
+import './styles/footer.style.scss'
 
 // [*] iconos
 import './icons/icomoon/style.css'
