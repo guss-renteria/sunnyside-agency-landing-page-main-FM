@@ -95,10 +95,16 @@ section.services {
       position: relative;
 
       div.image-service {
+        min-height: 48rem;
+        max-height: 68rem;
+        overflow: hidden;
         position: relative;
 
         img {
           width: 100%;
+          min-height: 48rem;
+          max-height: 68rem;
+          object-fit: cover;
           display: block;
         }
         

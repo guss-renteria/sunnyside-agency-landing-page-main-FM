@@ -3,6 +3,7 @@ import './styles/normalize.style.css'
 import './styles/index.style.scss'
 //
 import './styles/main.styles.scss'
+import './styles/client_testimonials.style.scss'
 
 // [*] iconos
 import './icons/icomoon/style.css'
@@ -21,7 +22,6 @@ const intro = new Intro(__intro)
 
 const __services = document.querySelector('main > section.services')
 const services = new Services(__services)
-services.debug()
 
 // [*] eventos
 // ? onresize
