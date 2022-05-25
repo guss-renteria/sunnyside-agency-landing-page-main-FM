@@ -25,7 +25,6 @@ const services = new Services(__services)
 
 const __collage = document.querySelector('main > section.collage')
 const collage = new Collage(__collage)
-collage.debug()
 
 // [*] eventos
 // ? onresize
